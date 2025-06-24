@@ -88,7 +88,7 @@ label {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  background: url(images/halie-west-25xggax4bSA-unsplash.jpg) center / cover no-repeat;
+  background: url(images/halie-west-25xggax4bSA-unsplash-min.jpg) center / cover no-repeat;
   min-width: 30vw;
   min-height: 100vh;
 }
