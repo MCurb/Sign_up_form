@@ -58,6 +58,11 @@ body {
     font-family: 'roboto';
 }
 
+@font-face {
+  font-family: norse;
+  src: url(fonts/Norse-Bold.otf);
+}
+
 img {
     height: 100vh;
     width: 35vw;
@@ -73,6 +78,32 @@ label {
     color: rgb(135, 135, 135);
     font-weight: 500;
     font-size: 12px;
+}
+
+.image-logo-container {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  background: url(images/halie-west-25xggax4bSA-unsplash.jpg) center / cover no-repeat;
+  min-width: 30vw;
+  min-height: 100vh;
+}
+
+.odin-logo {
+  height: 120px;
+  width: auto;
+}
+
+.odin-background {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 25vh;
+  color: white;
+  font-family: norse;
+  font-size: 86px;
+  padding: 10px;
 }
 
 .form-container {
@@ -99,6 +130,22 @@ form {
     flex-direction: column;
 }
 
+input {
+  border: 1px solid #E5E7EB;
+  border-radius: 3px;
+  width: 250px;
+}
+
+input[type="password"]:invalid {
+  border: 1px solid red;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid rgb(0, 0, 202);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -119,6 +166,16 @@ button {
     font-weight: 600;
     margin: 0 0 15px 50px;
     font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(89, 109, 72, 0.9);
+}
+
+button:active {
+  background-color: rgba(89, 109, 72, 0.8);
+  scale: 0.98;
 }
 
 .log-in {
@@ -128,5 +185,6 @@ button {
 
 a {
     color: #596D48;
-    font-weight: 600;
+    font-weight: 800;
+    text-decoration: none;
 }
