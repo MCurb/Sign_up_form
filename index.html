@@ -5,41 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up Form</title>
     <link rel="stylesheet" href="style.css" />
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Background Img -->
     <div class="image-logo-container">
-      <div class="odin-background">
-        <img src="images/odin-lined.png" alt="odin-logo" class="odin-logo">
+      <!-- Logo -->
+      <div class="logo-container">
+        <img src="images/odin-lined.png" alt="odin-logo" class="odin-logo" />
         ODIN
       </div>
+      <!-- Credits -->
       <div class="author-credits">
-        Photo by <a class="author-link" href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a class="author-link" href="https://unsplash.com/" target="_blank">Unsplash</a>
+        Photo by
+        <a
+          class="author-links"
+          href="https://unsplash.com/@haliewestphoto"
+          target="_blank"
+          >Halie West</a
+        >
+        on
+        <a class="author-links" href="https://unsplash.com/" target="_blank"
+          >Unsplash</a
+        >
       </div>
     </div>
-    <div class="form-container">
+    <div class="cta-form-wrapper">
+      <!-- Call to action -->
       <div>
         <p>
           This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sign up <em>now</em>
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em>
           to get started
         </p>
         <p>You <em>know</em> you want to.</p>
       </div>
+      <!-- Form Section -->
       <div>
         <form id="account-form" action="" method="post">
-          <legend>Let's do this!</legend>
-          <div class="input-section">
-            <section>
-              <div class="input-div">
-                <label for="first-name">
-                    FIRST NAME
-                </label>
-                <input type="text" id="first-name" name="first-name" required/>
+          <h2>Let's do this!</h2>
+          <div class="input-columns">
+            <!-- Column One -->
+            <section class="section-one">
+              <div class="form-groups">
+                <label for="first-name"> FIRST NAME </label>
+                <input type="text" id="first-name" name="first-name" required />
               </div>
-              <div class="input-div">
+              <div class="form-groups">
                 <label for="user-email">EMAIL</label>
                 <input
                   type="email"
@@ -49,22 +67,34 @@
                   required
                 />
               </div>
-              <div class="input-div">
+              <div class="form-groups">
                 <label for="user-pwd"> PASSWORD </label>
-                <input type="password" id="user-pwd" name="user-pwd" placeholder="8-digits password" required />
+                <input
+                  type="password"
+                  id="user-pwd"
+                  name="user-pwd"
+                  placeholder="8-digits password"
+                  required
+                />
               </div>
             </section>
-            <section>
-              <div class="input-div">
+            <!-- Column Two -->
+            <section class="section-two">
+              <div class="form-groups">
                 <label for="last-name"> LAST NAME </label>
                 <input type="text" id="last-name" name="last-name" />
               </div>
 
-              <div class="input-div">
+              <div class="form-groups">
                 <label for="user-number"> PHONE NUMBER </label>
-                <input type="tel" id="user-number" name="user-number" placeholder="Enter phone number" />
+                <input
+                  type="tel"
+                  id="user-number"
+                  name="user-number"
+                  placeholder="Enter phone number"
+                />
               </div>
-              <div class="input-div">
+              <div class="form-groups">
                 <label for="pwd-confirmation"> CONFIRMATION NUMBER </label>
                 <input
                   type="password"
@@ -78,9 +108,11 @@
           </div>
         </form>
       </div>
-      <div class="btn-div">
+      <div class="form-footer">
         <button form="account-form" type="submit">Create Account</button>
-        <p class="log-in">Already have an account? <a class="log-in-link" href="">Log in</a></p>
+        <p class="log-in">
+          Already have an account? <a class="log-in-link" href="">Log in</a>
+        </p>
       </div>
     </div>
   </body>
