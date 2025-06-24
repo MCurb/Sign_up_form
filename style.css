@@ -81,12 +81,12 @@ h6 {
 /* Global Styles */
 
 :root {
-  --match-background-color: rgb(89, 109, 72); 
+  --match-background-color: rgb(89, 109, 72);
 }
 
 body {
   display: flex;
-  font-family: "roboto";
+  font-family: "roboto", "Times New Roman", Times, serif;
 }
 
 @font-face {
@@ -111,7 +111,7 @@ body {
   gap: 0.25rem;
   padding: 0.75rem;
   margin-top: 25vh;
-  font-family: norse;
+  font-family: norse, "Times New Roman", Times, serif;
   font-size: 5.25rem;
   background-color: rgba(0, 0, 0, 0.5);
   color: rgb(255, 255, 255);
@@ -138,8 +138,8 @@ body {
 .cta-form-wrapper,
 form,
 .form-groups,
-.section-one,
-.section-two {
+.left-column,
+.right-column {
   display: flex;
   flex-direction: column;
 }
@@ -175,8 +175,8 @@ h2 {
   gap: 100px;
 }
 
-.section-one,
-.section-two {
+.left-column,
+.right-column {
   gap: 16px;
 }
 
