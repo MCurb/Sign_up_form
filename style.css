@@ -75,9 +75,13 @@ p {
 }
 
 label {
-    color: rgb(135, 135, 135);
+    color: rgb(121, 121, 121);
     font-weight: 500;
     font-size: 12px;
+}
+
+::placeholder {
+  opacity: 0.5;
 }
 
 .image-logo-container {
@@ -104,6 +108,17 @@ label {
   font-family: norse;
   font-size: 86px;
   padding: 10px;
+}
+
+.author-credits {
+  color: white;
+  margin-top: auto;
+  align-self: center;
+  padding: 10px;
+}
+
+.author-link {
+  color: white;
 }
 
 .form-container {
@@ -136,8 +151,12 @@ input {
   width: 250px;
 }
 
-input[type="password"]:invalid {
+input:user-invalid {
   border: 1px solid red;
+}
+
+input:user-valid {
+  border: 1px solid green;
 }
 
 input:focus {
@@ -183,7 +202,7 @@ button:active {
     font-size: 16px;
 }
 
-a {
+.log-in-link {
     color: #596D48;
     font-weight: 800;
     text-decoration: none;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sign up Form</title>
     <link rel="stylesheet" href="style.css" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,9 @@
       <div class="odin-background">
         <img src="images/odin-lined.png" alt="odin-logo" class="odin-logo">
         ODIN
+      </div>
+      <div class="author-credits">
+        Photo by <a class="author-link" href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a class="author-link" href="https://unsplash.com/" target="_blank">Unsplash</a>
       </div>
     </div>
     <div class="form-container">
@@ -42,12 +45,13 @@
                   type="email"
                   id="user-email"
                   name="user-email"
+                  placeholder="example@gmail.com"
                   required
                 />
               </div>
               <div class="input-div">
                 <label for="user-pwd"> PASSWORD </label>
-                <input type="password" id="user-pwd" name="user-pwd" required />
+                <input type="password" id="user-pwd" name="user-pwd" placeholder="8-digits password" required />
               </div>
             </section>
             <section>
@@ -58,7 +62,7 @@
 
               <div class="input-div">
                 <label for="user-number"> PHONE NUMBER </label>
-                <input type="tel" id="user-number" name="user-number" />
+                <input type="tel" id="user-number" name="user-number" placeholder="Enter phone number" />
               </div>
               <div class="input-div">
                 <label for="pwd-confirmation"> CONFIRMATION NUMBER </label>
@@ -66,6 +70,7 @@
                   type="password"
                   id="pwd-confirmation"
                   name="pwd-confirmation"
+                  placeholder="8-digits password"
                   required
                 />
               </div>
@@ -75,7 +80,7 @@
       </div>
       <div class="btn-div">
         <button form="account-form" type="submit">Create Account</button>
-        <p class="log-in">Already have an account? <a href="">Log in</a></p>
+        <p class="log-in">Already have an account? <a class="log-in-link" href="">Log in</a></p>
       </div>
     </div>
   </body>
